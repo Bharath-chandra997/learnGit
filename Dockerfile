@@ -8,7 +8,7 @@ RUN mvn dependency:go-offline -B
 COPY src ./src
 RUN mvn clean package -DskipTests
 
-# Stage 2: Create the final image with Tomcat
+
 # This stage takes the .war file and deploys it on a Tomcat server.
 FROM tomcat:9-jdk17-temurin
 

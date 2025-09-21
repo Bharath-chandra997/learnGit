@@ -52,7 +52,7 @@
         <failOnMissingWebXml>false</failOnMissingWebXml>
     </configuration>
 </plugin>
-      <!-- Enforce Maven + Java versions -->
+
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-enforcer-plugin</artifactId>
