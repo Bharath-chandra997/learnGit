@@ -43,7 +43,15 @@
         </configuration>
       </plugin>
 
-
+<plugin>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-war-plugin</artifactId>
+    <version>3.4.0</version>
+    <configuration>
+        <!-- This tells Maven that the web.xml file is not required -->
+        <failOnMissingWebXml>false</failOnMissingWebXml>
+    </configuration>
+</plugin>
       <!-- Enforce Maven + Java versions -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
